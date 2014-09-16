@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<style>
+		.commonborderstyle{
+			border-width: 1px;
+			border-style: solid;
+			border-color: lightgray;
+		}
+		.middle{
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.consolelogcontainer{
+			width: 60%;
+		}
+		body{
+			font-family: verdana;
+		}
+	</style>
+    <head>
+        <script src="http://gaurangp03:1339/socket.io/socket.io.js"></script>
+        <script src="../lib/jquery-2.1.1.js"></script>
+        <script src="observer.js"></script>
+    </head>
+    <body>
+    	<div id="setObservableAppId" class="middle consolelogcontainer">
+    		<div class="middle" style="width: 40%;">
+	    		<input type="text" id="observableAppIdInput" placeholder="Enter Observable App Id"/>
+	    		<button onclick="setObservableAppId()">Observe</button>
+	    	</div>
+    	</div><br/><br/>
+    	<div id="statusMessage" class="consolelogcontainer middle"></div>
+        <div id="consolelog" class="consolelogcontainer middle commonborderstyle"></div>
+    </body>
+</html>
