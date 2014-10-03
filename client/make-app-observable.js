@@ -1,6 +1,6 @@
 function onPageLoad(){
 	// Open connection with server
-	var socketio = io.connect("10.19.6.64:1339");
+	var socketio = io.connect("http://192.168.2.28:1339");
 
 	// Intercept console.log statements
 	var originalConsole = {};

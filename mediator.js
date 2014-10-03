@@ -5,7 +5,7 @@ fs = require('fs');
 // Mediator opening the port 1338 for allowing access to static resource as a normal web server
 	var connect = require('connect');
 	connect().use(serveStatic('client')).listen(1338);
-	console.log('Listening for web page request at http://10.19.6.64/:1338/');
+	console.log('Listening for web page request at http://localhost/:1338/');
 
 /*// Mediator opening the port 1340 to have communication with clients who wants to display the clients-to-be-intercepted list
 	var viewClientListApp = http.createServer(function (request, response) {}).listen(1340);

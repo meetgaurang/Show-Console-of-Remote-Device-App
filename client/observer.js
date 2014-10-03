@@ -1,5 +1,5 @@
 // Open connection with server
-var socketio = io.connect("10.19.6.64:1340");
+var socketio = io.connect("http://localhost:1340");
 
 $(document).ready(function(){
 	if(localStorage){
